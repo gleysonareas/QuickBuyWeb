@@ -31,19 +31,20 @@ export class LoginComponent implements OnInit {
   public enter(): void {
     this.userService.verifyUser(this.user).subscribe(
       data => {
-        console.log(data)
-        if (data.email === 'gleysonareasdasilva@gmail.com' && this.user.password === 'Gyn.4539766') {
-          sessionStorage.setItem('user-is-logged', '1');
-          sessionStorage.setItem('user-email', data.email);
-          this.userAuthenticated = true;
-          if (!this.returnUrl)
-            this.router.navigate(['/'])
-          else
-            this.router.navigate([this.returnUrl]);
-        }
+        // console.log(data)
+        // if (data.email === 'gleysonareasdasilva@gmail.com' && this.user.password === 'Gyn.4539766') {
+        // sessionStorage.setItem('user-is-logged', '1');
+        // sessionStorage.setItem('user-email', data.email);
+        // this.userAuthenticated = true;
+        this.userService.user = data;
+        if (!this.returnUrl)
+          this.router.navigate(['/'])
+        else
+          this.router.navigate([this.returnUrl]);
+        // }
       },
       err => {
-        console.log(err.error)
+        // console.log(err.error)
         this.message = err.error
       }
     );
