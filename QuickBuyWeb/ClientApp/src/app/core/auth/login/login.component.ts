@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IUser } from '../../../shared/model/user.interface';
 import { UserService } from "../../services/user.service";
+import { error } from "util";
 
 @Component({
   selector: 'qb-login',
@@ -14,6 +15,7 @@ export class LoginComponent implements OnInit {
   public userAuthenticated: boolean;
   public user: IUser;
   public returnUrl: string = '';
+  public message: string
 
   constructor(
     private router: Router,
@@ -29,14 +31,22 @@ export class LoginComponent implements OnInit {
   public enter(): void {
     this.userService.verifyUser(this.user).subscribe(
       data => {
+        console.log(data)
+        if (data.email === 'gleysonareasdasilva@gmail.com' && this.user.password === 'Gyn.4539766') {
+          sessionStorage.setItem('user-is-logged', '1');
+          sessionStorage.setItem('user-email', data.email);
+          this.userAuthenticated = true;
+          if (!this.returnUrl)
+            this.router.navigate(['/'])
+          else
+            this.router.navigate([this.returnUrl]);
+        }
       },
       err => {
+        console.log(err.error)
+        this.message = err.error
       }
     );
-    // if (this.user.email === 'gleysonareasdasilva@gmail.com' && this.user.password === 'Gyn.4539766') {
-    //   sessionStorage.setItem('user-is-logged', '1');
-    //   this.userAuthenticated = true;
-    //   this.router.navigate([this.returnUrl]);
   }
 }
 

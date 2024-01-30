@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
+        "projectName": "QuickBuyDomain",
+        "projectPath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
+        "packagesPath": "C:\\Users\\Gleyson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gleyson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://easycomtec.pkgs.visualstudio.com/_packaging/Builder/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Razor.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
+        "projectName": "QuickBuyRepository",
+        "projectPath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
+        "packagesPath": "C:\\Users\\Gleyson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Gleyson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://easycomtec.pkgs.visualstudio.com/_packaging/Builder/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
+                "projectPath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Razor.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

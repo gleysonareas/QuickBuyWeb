@@ -1,0 +1,9 @@
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.deps.json
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.dll
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.pdb
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.csproj.AssemblyReference.cache
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.csproj.CoreCompileInputs.cache
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.AssemblyInfoInputs.cache
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.AssemblyInfo.cs
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.dll
+C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.pdb

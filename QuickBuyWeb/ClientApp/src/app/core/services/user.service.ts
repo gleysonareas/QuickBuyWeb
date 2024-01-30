@@ -8,8 +8,7 @@ import { IUser } from "../../shared/model/user.interface";
 })
 export class UserService {
 
-  private apiPath = 'api/user'
-  private baseURL: string
+  private apiPath = 'api/user/verifyUser'
 
   constructor(
     @Inject('BASE_URL') public baseUrl: string,
@@ -24,6 +23,6 @@ export class UserService {
       password: user.password
     }
     // http://localhost:8080
-    return this.http.post<IUser>(`${this.baseURL}/${this.apiPath}`, body, { headers });
+    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}`, body, { headers });
   }
 } 
