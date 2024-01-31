@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
   public user: IUser;
   public returnUrl: string = '';
   public message: string
+  public spinnerActivate: boolean;
 
   constructor(
     private router: Router,
@@ -29,6 +30,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void { }
 
   public enter(): void {
+    this.spinnerActivate = true;
     this.userService.verifyUser(this.user).subscribe(
       data => {
         // console.log(data)
@@ -42,10 +44,12 @@ export class LoginComponent implements OnInit {
         else
           this.router.navigate([this.returnUrl]);
         // }
+        this.spinnerActivate = false;
       },
       err => {
         // console.log(err.error)
         this.message = err.error
+        this.spinnerActivate = false;
       }
     );
   }

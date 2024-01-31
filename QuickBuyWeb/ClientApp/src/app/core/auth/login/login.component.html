@@ -36,6 +36,12 @@
       required
     />
     <button class="btn btn-primary btn-block" (click)="enter()" type="submit">
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+        *ngIf="spinnerActivate"
+      ></span>
       Enter
     </button>
     <div class="alert alert-danger" *ngIf="message">

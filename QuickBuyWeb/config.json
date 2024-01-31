@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "MySqlConnection": "Server=localhost;Database=QuickBuyDB;uid=root;"
+    "MySqlConnection": "Server=srv688.hstgr.io;Database=u290552876_database_test;uid=u290552876_admin;pwd=Gyn.4539766;"
   }
 }

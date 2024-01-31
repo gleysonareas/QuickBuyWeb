@@ -11,14 +11,14 @@ const routes: Routes = ([
         path: '',
         component: HomeComponent,
     },
-    {
-        path: 'counter',
-        component: CounterComponent,
-    },
-    {
-        path: 'fetch-data',
-        component: FetchDataComponent,
-    },
+    // {
+    //     path: 'counter',
+    //     component: CounterComponent,
+    // },
+    // {
+    //     path: 'fetch-data',
+    //     component: FetchDataComponent,
+    // },
     {
         path: 'product',
         component: ProductComponent,
@@ -28,8 +28,8 @@ const routes: Routes = ([
 
 export const routedPagesComponents = [
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
+    // CounterComponent,
+    // FetchDataComponent,
     ProductComponent,
 ];
 
