@@ -8,7 +8,7 @@ import { IUser } from "../../shared/model/user.interface";
 })
 export class UserService {
 
-  private apiPath = 'api/user/verifyUser'
+  private apiPath = 'api/user'
 
   private _user: IUser
   get user(): IUser {
@@ -41,6 +41,17 @@ export class UserService {
       password: user.password
     }
     // http://localhost:8080
-    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}`, body, { headers });
+    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}/verifyUser`, body, { headers });
+  }
+
+  public addNewUser(user: IUser): Observable<IUser> {
+    const headers = new HttpHeaders().set('content-type', 'application/json');
+    var body = {
+      email: user.email,
+      password: user.password,
+      name: user.name,
+      lastName: user.lastName,
+    }
+    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}`, body, { headers })
   }
 } 

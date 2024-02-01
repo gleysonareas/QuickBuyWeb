@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IUser } from "../../../shared/model/user.interface";
+import { UserService } from "../../services/user.service";
 
 @Component({
   selector: 'qb-new-user',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewUserComponent implements OnInit {
 
-  constructor() { }
+  public user: IUser;
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+  }
+
+  public addNewUser() {
+    this.userService.addNewUser(this.user).subscribe(
+      data => { },
+      err => { }
+    );
   }
 
 }
