@@ -1,13 +1,22 @@
-import { SharedRountingModule } from './shared-routing.module';
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [],
     imports: [
-        SharedRountingModule,
+        HttpClientModule,
+        FormsModule,
+        CommonModule,
+        ReactiveFormsModule
+
     ],
     exports: [
-        SharedRountingModule,
+        HttpClientModule,
+        FormsModule,
+        CommonModule,
+        ReactiveFormsModule
     ],
 })
 

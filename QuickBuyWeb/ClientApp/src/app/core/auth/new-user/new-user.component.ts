@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IUser } from "../../../shared/model/user.interface";
 import { UserService } from "../../services/user.service";
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'qb-new-user',
@@ -9,9 +10,21 @@ import { UserService } from "../../services/user.service";
 })
 export class NewUserComponent implements OnInit {
 
+  public imagePath: string = "../assets/buy-logo.jpg"
+  public userAuthenticated: boolean;
   public user: IUser;
+  public returnUrl: string = '';
+  public message: string
+  public spinnerActivate: boolean;
 
-  constructor(private userService: UserService) { }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService
+  ) {
+    this.user = <IUser>{};
+    this.returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'];
+  }
 
   ngOnInit(): void {
   }

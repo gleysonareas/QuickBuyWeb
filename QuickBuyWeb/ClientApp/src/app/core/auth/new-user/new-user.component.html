@@ -1,1 +1,96 @@
-<p>new-user works!</p>
+<div class="text-center">
+  <form class="form-signin">
+    <h1 class="h4 mb-2 login">Criar Conta</h1>
+    <label for="inputEmail" class="sr-only" hidden>Email</label>
+    <input
+      type="email"
+      id="inputEmail"
+      name="email"
+      placeholder="Email"
+      class="form-control mb-2"
+      [ngClass]="{
+        'is-invalid':
+          emailInput.invalid && (emailInput.dirty || emailInput.touched),
+        'is-valid': emailInput.valid && (emailInput.dirty || emailInput.touched)
+      }"
+      [(ngModel)]="user.email"
+      #emailInput="ngModel"
+      required
+    />
+    <label for="inputPassword" class="sr-only" hidden>Password</label>
+    <input
+      type="password"
+      id="inputPassword"
+      name="password"
+      placeholder="Senha"
+      class="form-control mb-2"
+      [ngClass]="{
+        'is-invalid':
+          passwordInput.invalid &&
+          (passwordInput.dirty || passwordInput.touched),
+        'is-valid':
+          passwordInput.valid && (passwordInput.dirty || passwordInput.touched)
+      }"
+      [(ngModel)]="user.password"
+      #passwordInput="ngModel"
+      required
+    />
+    <label for="inputName" class="sr-only" hidden>Nome</label>
+    <input
+      type="text"
+      id="inputName"
+      name="name"
+      placeholder="Nome"
+      class="form-control mb-2"
+      [ngClass]="{
+        'is-invalid':
+          nameInput.invalid && (nameInput.dirty || nameInput.touched),
+        'is-valid': emailInput.valid && (nameInput.dirty || nameInput.touched)
+      }"
+      [(ngModel)]="user.name"
+      #nameInput="ngModel"
+      required
+    />
+    <label for="inputLastName" class="sr-only" hidden>Sobrenome</label>
+    <input
+      type="text"
+      id="inputLastName"
+      name="lastName"
+      placeholder="Sobrenome"
+      class="form-control mb-2"
+      [ngClass]="{
+        'is-invalid':
+          lastNameInput.invalid &&
+          (lastNameInput.dirty || lastNameInput.touched),
+        'is-valid':
+          emailInput.valid && (lastNameInput.dirty || lastNameInput.touched)
+      }"
+      [(ngModel)]="user.lastName"
+      #lastNameInput="ngModel"
+      required
+    />
+    <button
+      class="btn btn-primary btn-block"
+      (click)="addNewUser()"
+      type="submit"
+    >
+      <span
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+        *ngIf="spinnerActivate"
+      ></span>
+      Cadastrar
+    </button>
+    <div class="login">
+      <a routerLink="/login">Clique aqui para voltar ao login</a>
+    </div>
+    <div class="alert alert-danger" *ngIf="message">
+      {{ message }}
+    </div>
+  </form>
+  <img [src]="imagePath" />
+  <div class="alert alert-primary" role="alert" *ngIf="userAuthenticated">
+    <p>User authenticated</p>
+  </div>
+</div>

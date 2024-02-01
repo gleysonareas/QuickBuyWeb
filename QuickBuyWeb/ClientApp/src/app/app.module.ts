@@ -1,7 +1,6 @@
 import { AppRoutingModule, routedComponents } from './app-routing.module';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';

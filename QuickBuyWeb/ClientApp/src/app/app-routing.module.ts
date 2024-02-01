@@ -1,7 +1,7 @@
-import { NavMenuComponent } from './core/theme/nav-menu/nav-menu.component';
 import { NgModule } from "@angular/core";
 import { ExtraOptions, RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
+import { NavMenuComponent } from './core/theme/nav-menu/nav-menu.component';
 
 const routes: Routes = [
     {

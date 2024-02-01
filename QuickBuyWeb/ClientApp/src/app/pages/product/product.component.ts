@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from "src/app/core/services/product.service";
+import { IProduct } from "src/app/shared/model/product.interface";
 
 @Component({
   selector: 'qb-product',
@@ -8,15 +10,19 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProductComponent implements OnInit {
 
-  public name: string = "";
-  public releasedForSale: boolean = <boolean>{}; 
+  public product: IProduct;
 
-  constructor() { }
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  public getName(): string {
-    return this.name;
+  public addProduct() {
+    this.productService.insert(this.product).subscribe(
+      data => { },
+      err => { }
+    );
   }
 }
