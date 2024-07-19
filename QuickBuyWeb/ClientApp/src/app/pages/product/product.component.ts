@@ -10,7 +10,7 @@ import { IProduct } from "src/app/shared/model/product.interface";
 
 export class ProductComponent implements OnInit {
 
-  public product: IProduct;
+  public product: IProduct = <IProduct>{};
 
   constructor(
     private productService: ProductService

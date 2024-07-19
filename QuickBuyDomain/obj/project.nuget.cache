@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxszYyX2IUp7tPqkc5xbohy8rDRogJVH4qFux5nXjsaAaOugB2qQhr/3YjuHnbDL9MMihhUZZ+aO77RZjs/enA==",
+  "dgSpecHash": "6g0BD3ksrhBW0Z4MBHZhEu85pCpufhWpjhNfCTDp6lKQRnxMOFVFB2xgjMexQ0LS0KibaPEEbV0gm4Sh1tXTYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gleyson\\Desktop\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
+  "projectFilePath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gleyson\\.nuget\\packages\\castle.core\\4.2.1\\castle.core.4.2.1.nupkg.sha512",
     "C:\\Users\\Gleyson\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.2.0\\microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512",

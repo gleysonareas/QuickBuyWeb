@@ -7,3 +7,12 @@ C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\Qui
 C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.AssemblyInfo.cs
 C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.dll
 C:\Users\Gleyson\Desktop\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.pdb
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.deps.json
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.dll
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\bin\Debug\netstandard2.0\QuickBuyDomain.pdb
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.csproj.AssemblyReference.cache
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.csproj.CoreCompileInputs.cache
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.AssemblyInfoInputs.cache
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.AssemblyInfo.cs
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.dll
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyDomain\obj\Debug\netstandard2.0\QuickBuyDomain.pdb
