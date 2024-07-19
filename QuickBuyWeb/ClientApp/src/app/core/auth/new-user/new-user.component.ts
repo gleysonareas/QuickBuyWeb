@@ -31,8 +31,13 @@ export class NewUserComponent implements OnInit {
 
   public addNewUser() {
     this.userService.addNewUser(this.user).subscribe(
-      data => { },
-      err => { }
+      data => {
+        this.userAuthenticated = true;
+        this.message = ''
+      },
+      err => {
+        this.message = err.error
+      }
     );
   }
 

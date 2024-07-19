@@ -88,9 +88,14 @@
     <div class="alert alert-danger" *ngIf="message">
       {{ message }}
     </div>
+    <div class="alert alert-success" *ngIf="userAuthenticated">
+      Usuario cadastrado com sucesso
+      <a class="alert-link" [routerLink]="['/enter']">Clique aqui</a> Para
+      acessar
+    </div>
   </form>
-  <img [src]="imagePath" />
-  <div class="alert alert-primary" role="alert" *ngIf="userAuthenticated">
+  <img [src]="imagePath" alt="" />
+  <!-- <div class="alert alert-primary" role="alert" *ngIf="userAuthenticated">
     <p>User authenticated</p>
-  </div>
+  </div> -->
 </div>
