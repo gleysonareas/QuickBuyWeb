@@ -7,7 +7,6 @@ import { IProduct } from "../../shared/model/product.interface";
   providedIn: 'root',
 })
 export class ProductService {
-
   private _baseUrl: string
   private products: IProduct[] = [];
 
@@ -25,6 +24,7 @@ export class ProductService {
   public getAll(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(`${this._baseUrl}/api/`)
   }
+
   public getById(productId: IProduct): Observable<IProduct> {
     return this.http.get<IProduct>(`${this._baseUrl}/api/`)
   }
@@ -37,10 +37,18 @@ export class ProductService {
     // }
     return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
   }
+
   public update(product: IProduct): Observable<IProduct> {
     return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
   }
+
   public delete(product: IProduct): Observable<IProduct> {
     return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
+  }
+
+  public sendFile(selectedFile: File) {
+    const formData: FormData = new FormData();
+    formData.append("sendFile", selectedFile, selectedFile.name)
+    return this.http.post<boolean>(`${this._baseUrl}/api/sendFile`, formData)
   }
 } 

@@ -30,13 +30,16 @@ export class NewUserComponent implements OnInit {
   }
 
   public addNewUser() {
+    this.spinnerActivate = true
     this.userService.addNewUser(this.user).subscribe(
       data => {
         this.userAuthenticated = true;
         this.message = ''
+        this.spinnerActivate = false
       },
       err => {
         this.message = err.error
+        this.spinnerActivate = false
       }
     );
   }

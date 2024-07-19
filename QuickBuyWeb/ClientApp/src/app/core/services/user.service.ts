@@ -36,22 +36,22 @@ export class UserService {
 
   public verifyUser(user: IUser): Observable<IUser> {
     const headers = new HttpHeaders().set('content-type', 'application/json');
-    var body = {
-      email: user.email,
-      password: user.password
-    }
+    // var body = {
+    //   email: user.email,
+    //   password: user.password
+    // }
     // http://localhost:8080
-    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}/verifyUser`, body, { headers });
+    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}/verifyUser`, JSON.stringify(user), { headers });
   }
 
   public addNewUser(user: IUser): Observable<IUser> {
     const headers = new HttpHeaders().set('content-type', 'application/json');
-    var body = {
-      email: user.email,
-      password: user.password,
-      name: user.name,
-      lastName: user.lastName,
-    }
-    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}`, body, { headers })
+    // var body = {
+    //   email: user.email,
+    //   password: user.password,
+    //   name: user.name,
+    //   lastName: user.lastName,
+    // }
+    return this.http.post<IUser>(`${this.baseUrl}/${this.apiPath}`, JSON.stringify(user), { headers })
   }
 } 

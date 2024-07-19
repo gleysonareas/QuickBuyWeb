@@ -11,6 +11,7 @@ import { IProduct } from "src/app/shared/model/product.interface";
 export class ProductComponent implements OnInit {
 
   public product: IProduct = <IProduct>{};
+  public selectedFile: File
 
   constructor(
     private productService: ProductService
@@ -24,5 +25,17 @@ export class ProductComponent implements OnInit {
       data => { },
       err => { }
     );
+  }
+
+  public inputChange(data: FileList) {
+    this.selectedFile = data.item(0)
+    this.productService.sendFile(this.selectedFile).subscribe(
+      result => {
+        console.log(result)
+      },
+      err => {
+        console.log(err)
+      }
+    )
   }
 }
