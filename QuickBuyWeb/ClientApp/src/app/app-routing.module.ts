@@ -25,8 +25,7 @@ const routes: Routes = [
 ];
 
 const config: ExtraOptions = {
-    useHash: false,
-    relativeLinkResolution: 'legacy'
+    useHash: false
 };
 
 export const routedComponents = [
