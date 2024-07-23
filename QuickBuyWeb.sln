@@ -1,13 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31402.337
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuyWeb", "QuickBuyWeb\QuickBuyWeb.csproj", "{F4982060-EC94-4AC7-878D-E86F0495BE1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuyWeb", "QuickBuyWeb\QuickBuyWeb.csproj", "{F4982060-EC94-4AC7-878D-E86F0495BE1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E5FC5905-A52F-4D99-AB61-19511D0F18D9} = {E5FC5905-A52F-4D99-AB61-19511D0F18D9}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuyDomain", "QuickBuyDomain\QuickBuyDomain.csproj", "{4C7A0234-3D70-4EB3-B8B9-F422C3512DDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuyDomain", "QuickBuyDomain\QuickBuyDomain.csproj", "{4C7A0234-3D70-4EB3-B8B9-F422C3512DDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuyRepository", "QuickBuyRepository\QuickBuyRepository.csproj", "{76C3AAD6-266D-4CE7-BA4D-C673804D7241}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuyRepository", "QuickBuyRepository\QuickBuyRepository.csproj", "{76C3AAD6-266D-4CE7-BA4D-C673804D7241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuyAplication", "QuickBuyAplication\QuickBuyAplication.csproj", "{E5FC5905-A52F-4D99-AB61-19511D0F18D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4C7A0234-3D70-4EB3-B8B9-F422C3512DDE} = {4C7A0234-3D70-4EB3-B8B9-F422C3512DDE}
+		{76C3AAD6-266D-4CE7-BA4D-C673804D7241} = {76C3AAD6-266D-4CE7-BA4D-C673804D7241}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +36,10 @@ Global
 		{76C3AAD6-266D-4CE7-BA4D-C673804D7241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C3AAD6-266D-4CE7-BA4D-C673804D7241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C3AAD6-266D-4CE7-BA4D-C673804D7241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5FC5905-A52F-4D99-AB61-19511D0F18D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FC5905-A52F-4D99-AB61-19511D0F18D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FC5905-A52F-4D99-AB61-19511D0F18D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FC5905-A52F-4D99-AB61-19511D0F18D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
