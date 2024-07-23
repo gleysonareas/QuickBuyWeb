@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using QuickBuyDomain.Contract;
 using QuickBuyDomain.Entity;
 using System;
+using System.IO;
+using System.Linq;
 
 namespace QuickBuyWeb.Controllers
 {
@@ -9,9 +13,17 @@ namespace QuickBuyWeb.Controllers
     public class ProductController : Controller
     {
         private readonly IProductRepository _productRepository;
-        public ProductController(IProductRepository productRepository)
+        private IHttpContextAccessor _httpContextAccessor;
+        private IHostingEnvironment _hostingEnvironment;
+        public ProductController(
+            IProductRepository productRepository,
+            IHttpContextAccessor httpContextAccessor,
+            IHostingEnvironment hostingEnvironment
+            )
         {
             _productRepository = productRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         [HttpGet]
@@ -41,5 +53,26 @@ namespace QuickBuyWeb.Controllers
                 return BadRequest(ex.ToString());
             }
         }
+
+        [HttpPost("FileUpload")]
+        public IActionResult FileUpload()
+        {
+            try
+            {
+                var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["sendFile"];
+                var nameFile = formFile.FileName;
+                var extensionFile = nameFile.Split(".").Last();
+                var compactNames = Path.GetFileNameWithoutExtension(nameFile).Take(10).ToArray();
+                var newNameFile = new string(compactNames).Replace(" ", "-") + "." + extensionFile;
+                var fileFolder = _hostingEnvironment.WebRootPath + "\\files\\";
+                var completeName = fileFolder + newNameFile;
+
+                using (var st)
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
+        }
     }
-}
+
