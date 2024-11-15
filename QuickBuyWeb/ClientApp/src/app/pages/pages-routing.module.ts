@@ -4,7 +4,8 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 
-import { RoutesGuard } from './../core/guards/routes.guard';
+// import { RoutesGuard } from './../core/guards/routes.guard';
+import { SearchProductsComponent } from "./search-products/search-products.component";
 
 const routes: Routes = ([
     {
@@ -22,6 +23,11 @@ const routes: Routes = ([
     {
         path: 'product',
         component: ProductComponent,
+        // canActivate: [RoutesGuard]
+    },
+    {
+        path: 'search-product',
+        component: SearchProductsComponent
         // canActivate: [RoutesGuard]
     }
 ]);

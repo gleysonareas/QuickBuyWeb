@@ -21,7 +21,7 @@ namespace QuickBuyDomain.Entity
         public virtual Payment Payment { get; set; }
         public virtual ICollection<ItemRequest> ItensRequest { get; set; }
 
-        protected override void Validate()
+        public override void Validate()
         {
             ClearValidateMessages();
             if (!ItensRequest.Any())

@@ -22,33 +22,38 @@ export class ProductService {
   }
 
   public getAll(): Observable<IProduct[]> {
-    return this.http.get<IProduct[]>(`${this._baseUrl}/api/`)
+    return this.http.get<IProduct[]>(`${this._baseUrl}api/product`)
   }
 
   public getById(productId: IProduct): Observable<IProduct> {
-    return this.http.get<IProduct>(`${this._baseUrl}/api/`)
+    return this.http.get<IProduct>(`${this._baseUrl}api/product`)
   }
 
   public insert(product: IProduct): Observable<IProduct> {
-    // var body = {
-    //   name: product.name,
-    //   description: product.description,
-    //   price: product.price
-    // }
-    return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
+    const body = {
+      Name: product.name,
+      Description: product.description,
+      Price: product.price,
+      NameFile: product.nameFile
+    }
+    return this.http.post<IProduct>(`${this._baseUrl}api/product`, JSON.stringify(body), { headers: this.headers })
   }
 
   public update(product: IProduct): Observable<IProduct> {
-    return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
+    return this.http.post<IProduct>(`${this._baseUrl}api/product`, JSON.stringify(product), { headers: this.headers })
   }
 
   public delete(product: IProduct): Observable<IProduct> {
-    return this.http.post<IProduct>(`${this._baseUrl}/api/`, JSON.stringify(product), { headers: this.headers })
+    return this.http.post<IProduct>(
+        `${this._baseUrl}api/product/delete`,
+        JSON.stringify(product),
+        { headers: this.headers }
+      )
   }
 
   public sendFile(selectedFile: File) {
     const formData: FormData = new FormData();
     formData.append("sendFile", selectedFile, selectedFile.name)
-    return this.http.post<boolean>(`${this._baseUrl}/api/sendFile`, formData)
+    return this.http.post<string>(`${this._baseUrl}api/product/fileUpload`, formData)
   }
 } 

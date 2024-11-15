@@ -9,6 +9,6 @@ namespace QuickBuyDomain.Contract
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();
         void Update(TEntity entity);
-        void delete(TEntity entity);
+        void Delete(TEntity entity);
     }
 }

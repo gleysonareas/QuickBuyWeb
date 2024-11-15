@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 import { ProductService } from "src/app/core/services/product.service";
 import { IProduct } from "src/app/shared/model/product.interface";
 
@@ -10,32 +11,54 @@ import { IProduct } from "src/app/shared/model/product.interface";
 
 export class ProductComponent implements OnInit {
 
+  private productService = inject(ProductService);
+  private router = inject(Router)
+
   public product: IProduct = <IProduct>{};
-  public selectedFile: File
+  public activateSpinner: boolean = false;
+  public selectedFile: File;
+  public message: string;
 
-  constructor(
-    private productService: ProductService
-  ) { }
-
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    const productSelected = JSON.parse(sessionStorage.getItem("productSelected"));
+    if (productSelected)
+      this.product = productSelected
   }
 
   public addProduct() {
+    this.activateSpinner = true
     this.productService.insert(this.product).subscribe(
-      data => { },
-      err => { }
+      data => {
+        this.activateSpinner = false;
+        console.log(data)
+        sessionStorage.removeItem("productSelected")
+        this.router.navigate(["/search-product"])
+      },
+      err => {
+        this.activateSpinner = false;
+        console.log(err.error)
+        this.message = err.error
+      }
     );
   }
 
   public inputChange(data: FileList) {
     this.selectedFile = data.item(0)
+    this.activateSpinner = true
     this.productService.sendFile(this.selectedFile).subscribe(
       result => {
+        this.product.nameFile = result
         console.log(result)
+        this.activateSpinner = false;
       },
       err => {
         console.log(err)
+        this.activateSpinner = false
       }
     )
+  }
+
+  cancel() {
+    this.router.navigate(["/search-product"])
   }
 }

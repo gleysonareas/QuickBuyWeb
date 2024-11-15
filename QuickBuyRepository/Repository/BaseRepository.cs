@@ -19,7 +19,7 @@ namespace QuickBuyRepository.Repository
             QuickBuyContext.SaveChanges();
         }
 
-        public void delete(TEntity entity)
+        public void Delete(TEntity entity)
         {
             QuickBuyContext.Remove(entity);
             QuickBuyContext.SaveChanges();

@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuickBuyRepository.Context;
 
 namespace QuickBuyRepository.Migrations
 {
     [DbContext(typeof(QuickBuyContext))]
-    partial class QuickBuyContextModelSnapshot : ModelSnapshot
+    [Migration("20241030163135_NewCollumProductNameFile")]
+    partial class NewCollumProductNameFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,8 +52,7 @@ namespace QuickBuyRepository.Migrations
 
                     b.Property<string>("NameFile");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(19,4)");
+                    b.Property<decimal>("Price");
 
                     b.HasKey("Id");
 

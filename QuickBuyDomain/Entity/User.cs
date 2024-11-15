@@ -11,7 +11,7 @@ namespace QuickBuyDomain.Entity
         public string LastName { get; set; }
         public virtual ICollection<Requestt> Requests { get; set; }
 
-        protected override void Validate()
+        public override void Validate()
         {
             if (string.IsNullOrEmpty(Email))
             {
