@@ -19,6 +19,18 @@ D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug
 D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.csproj.CoreCompileInputs.cache
 D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.AssemblyInfoInputs.cache
 D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.AssemblyInfo.cs
-D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.csproj.CopyComplete
 D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.dll
 D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.pdb
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuy.CD1882EC.Up2Date
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\bin\Debug\netstandard2.0\QuickBuyRepository.deps.json
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\bin\Debug\netstandard2.0\QuickBuyRepository.dll
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\bin\Debug\netstandard2.0\QuickBuyRepository.pdb
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\bin\Debug\netstandard2.0\QuickBuyDomain.dll
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\bin\Debug\netstandard2.0\QuickBuyDomain.pdb
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.csproj.CoreCompileInputs.cache
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.AssemblyInfoInputs.cache
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.AssemblyInfo.cs
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.dll
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.pdb
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuyRepository.csproj.AssemblyReference.cache
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyRepository\obj\Debug\netstandard2.0\QuickBuy.CD1882EC.Up2Date

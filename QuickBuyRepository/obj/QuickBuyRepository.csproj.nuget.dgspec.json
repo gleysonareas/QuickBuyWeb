@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {}
+    "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {}
   },
   "projects": {
-    "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
+    "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
+        "projectUniqueName": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
         "projectName": "QuickBuyDomain",
-        "projectPath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
+        "projectPath": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj",
         "packagesPath": "C:\\Users\\Gleyson\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\obj\\",
+        "outputPath": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -32,7 +32,6 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -44,7 +43,6 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.AspNetCore.Razor.Design": {
               "target": "Package",
@@ -77,14 +75,14 @@
         }
       }
     },
-    "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {
+    "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
+        "projectUniqueName": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
         "projectName": "QuickBuyRepository",
-        "projectPath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
+        "projectPath": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyRepository\\QuickBuyRepository.csproj",
         "packagesPath": "C:\\Users\\Gleyson\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyRepository\\obj\\",
+        "outputPath": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -105,10 +103,9 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
-                "projectPath": "D:\\Repositorios\\Cursos\\Dotnet & Angular\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj"
+              "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj": {
+                "projectPath": "D:\\Repositorios\\Cursos\\Angular_&_dotNetCore\\quickbuyweb\\QuickBuyDomain\\QuickBuyDomain.csproj"
               }
             }
           }
@@ -121,7 +118,6 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.AspNetCore.Razor.Design": {
               "target": "Package",

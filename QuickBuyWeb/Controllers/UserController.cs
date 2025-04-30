@@ -22,6 +22,7 @@ namespace QuickBuyWeb.Controllers
                 var userAdded = _userRepository.Get(user.Email);
                 if (userAdded != null)
                     return BadRequest("Usuário já cadastrado no sistema");
+                //user.IsAdmin = true;
                 _userRepository.Add(user);
                 return Ok();
             }

@@ -9,6 +9,7 @@ namespace QuickBuyDomain.Entity
         public string Password { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
+        public bool IsAdmin { get; set; }
         public virtual ICollection<Requestt> Requests { get; set; }
 
         public override void Validate()

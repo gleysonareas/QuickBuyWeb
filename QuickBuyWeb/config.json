@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "MySqlConnection": "Server=srv688.hstgr.io;Database=u290552876_database_test;uid=u290552876_admin;pwd=Gyn.4539766;"
+    "MySqlConnection": "Server=127.0.0.1;Port=3306;Database=database_test;Uid=root;Pwd=;SslMode=None;Pooling=True;Connection Timeout=30;"
   }
 }

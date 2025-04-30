@@ -1,0 +1,12 @@
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\bin\Debug\QuickBuyAplication.dll
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\bin\Debug\QuickBuyAplication.pdb
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.csproj.AssemblyReference.cache
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.csproj.CoreCompileInputs.cache
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.dll
+D:\Repositorios\Cursos\Dotnet & Angular\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.pdb
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\bin\Debug\QuickBuyAplication.dll
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\bin\Debug\QuickBuyAplication.pdb
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.csproj.AssemblyReference.cache
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.csproj.CoreCompileInputs.cache
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.dll
+D:\Repositorios\Cursos\Angular_&_dotNetCore\quickbuyweb\QuickBuyAplication\obj\Debug\QuickBuyAplication.pdb
