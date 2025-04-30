@@ -1,1 +1,23 @@
-<p>search works!</p>
+<div class="container" *ngIf="products">
+  <div class="row">
+    <div class="col-md-4 m-2" *ngFor="let item of products">
+      <a (click)="openProduct(item)">
+        <div class="card">
+          <img
+            class="card-top"
+            src="../../../../../files/{{ item.nameFile }}"
+            alt=""
+            height="180"
+          />
+          <div class="card-body">
+            <!-- <h5 class="card-title">{{item.name}}</h5> -->
+            <div class="card-text">{{ item.description }}</div>
+            <h5 class="h5">{{ item.price }}</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!products">Carregando produtos...</div>
