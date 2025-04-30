@@ -4,14 +4,12 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 
-// import { RoutesGuard } from './../core/guards/routes.guard';
+import { RoutesGuard } from './../core/guards/routes.guard';
 import { SearchProductsComponent } from "./search-products/search-products.component";
+import { StoreComponent } from "./store/store.component";
+import { ToEffectComponent } from "./store/to-effect/to-effect.component";
 
 const routes: Routes = ([
-    {
-        path: '',
-        component: HomeComponent,
-    },
     // {
     //     path: 'counter',
     //     component: CounterComponent,
@@ -21,22 +19,39 @@ const routes: Routes = ([
     //     component: FetchDataComponent,
     // },
     {
+        path: '',
+        component: HomeComponent,
+    },
+    {
         path: 'product',
         component: ProductComponent,
-        // canActivate: [RoutesGuard]
+        canActivate: [RoutesGuard]
     },
     {
         path: 'search-product',
-        component: SearchProductsComponent
+        component: SearchProductsComponent,
+        canActivate: [RoutesGuard]
+    },
+    {
+        path: 'store',
+        component: StoreComponent,
         // canActivate: [RoutesGuard]
+    },
+    {
+        path: 'efetivar-compra',
+        component: ToEffectComponent,
+        canActivate: [RoutesGuard]
     }
 ]);
 
 export const routedPagesComponents = [
-    HomeComponent,
     // CounterComponent,
     // FetchDataComponent,
+    HomeComponent,
     ProductComponent,
+    SearchProductsComponent,
+    StoreComponent,
+    ToEffectComponent
 ];
 
 @NgModule({
