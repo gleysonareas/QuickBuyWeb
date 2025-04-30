@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { ProductService } from "src/app/core/services/product.service";
-import { IProduct } from "src/app/shared/model/product.interface";
+import { ProductService } from "../../core/services/product.service";
+import { IProduct } from "../../shared/interfaces/product.interface";
 
 @Component({
   selector: 'qb-product',
@@ -60,5 +60,6 @@ export class ProductComponent implements OnInit {
 
   cancel() {
     this.router.navigate(["/search-product"])
+    sessionStorage.removeItem("productSelected")
   }
 }
