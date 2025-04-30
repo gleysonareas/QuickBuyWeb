@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Inject, Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { IUser } from "../../shared/model/user.interface";
+import { IUser } from "../../shared/interfaces/user.interface";
 
 @Injectable({
   providedIn: 'root',
@@ -27,6 +27,10 @@ export class UserService {
 
   public userAuth(): boolean {
     return this._user != null && this._user.email != "" && this._user.password != "";
+  }
+
+  public userAdmin() {
+    return this.userAuth() && this._user.isAdmin;
   }
 
   public clearSession() {
