@@ -30,7 +30,9 @@ namespace QuickBuyWeb
         public void ConfigureServices(IServiceCollection services)
         {
             {
-                services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                services.AddMvc()
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                    .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
                 services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
                 var connectionString = Configuration.GetConnectionString("MySqlConnection");
@@ -78,15 +80,15 @@ namespace QuickBuyWeb
 
             app.UseSpa(spa =>
             {
-                    // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                    // see https://go.microsoft.com/fwlink/?linkid=864501
+                // To learn more about options for serving an Angular SPA from ASP.NET Core,
+                // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                    spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
                 {
-                        //spa.UseAngularCliServer(npmScript: "start");
-                        spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+                    //spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }
