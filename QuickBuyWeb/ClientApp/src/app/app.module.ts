@@ -6,10 +6,14 @@ import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './core/auth/auth.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { NavMenuComponent } from "./core/theme/nav-menu/nav-menu.component";
+import { NavMenuItemComponent } from "./core/theme/nav-menu/nav-menu-item/nav-menu-item.component";
 
 @NgModule({
   declarations: [
-    ...routedComponents
+    ...routedComponents,
+    NavMenuComponent,
+    NavMenuItemComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

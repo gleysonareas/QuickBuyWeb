@@ -37,8 +37,14 @@
               >Fetch data</a
             >
           </li> -->
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/pages/search-product']"
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            *ngIf="userIsAdmin()"
+          >
+            <a
+              class="nav-link text-dark"
+              [routerLink]="['/pages/search-product']"
               >Product</a
             >
           </li>
@@ -82,6 +88,22 @@
                 Sair
               </li>
             </ul>
+          </li>
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            *ngIf="verifyShoppingCart()"
+          >
+            <a
+              class="nav-link text-dark"
+              [routerLink]="['/pages/efetivar-compra']"
+            >
+              <img
+                src="../../../../assets/shopping-cart-icon.png"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+            </a>
           </li>
         </ul>
       </div>
