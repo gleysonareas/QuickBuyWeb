@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IUser } from '../../../shared/model/user.interface';
+import { IUser } from '../../../shared/interfaces/user.interface';
 import { UserService } from "../../services/user.service";
 // import { error } from "util";
 
