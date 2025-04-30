@@ -4,4 +4,6 @@ export interface IProduct {
   name: string,
   description: string,
   price: number,
+  initialPrice?: number,
+  quantity?: number,
 }
