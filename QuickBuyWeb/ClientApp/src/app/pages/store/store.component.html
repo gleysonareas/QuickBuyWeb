@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../../../files/{{ product.nameFile }}" alt="" width="100%" />
+    </div>
+    <div class="col-md-6">
+      <!-- <div class="row">{{ product.name }}</div> -->
+      <div class="row mb-4">
+        <h4 class="h4">
+          {{ product.description }}
+        </h4>
+      </div>
+      <div class="row mb-4">
+        <h4 class="h4">
+          {{ product.price }}
+        </h4>
+      </div>
+      <div class="row mb-4">
+        <button class="btn btn-danger btn-lg" (click)="buy()">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
