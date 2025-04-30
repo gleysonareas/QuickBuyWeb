@@ -32,4 +32,8 @@ export class ShoppingCart {
     const items = this.getItemsCart();
     return items && items.length > 0;
   }
+
+  clear() {
+    localStorage.removeItem('productsCart');
+  }
 }

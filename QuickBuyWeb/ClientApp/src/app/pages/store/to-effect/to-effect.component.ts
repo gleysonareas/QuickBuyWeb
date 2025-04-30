@@ -5,6 +5,7 @@ import { IOrder } from "../../../shared/interfaces/order.interface";
 import { UserService } from "../../../core/services/user.service";
 import { IOrderItem } from "../../../shared/interfaces/order-item.interface";
 import { OrderService } from "../../../core/services/order.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-to-effect',
@@ -16,6 +17,7 @@ import { OrderService } from "../../../core/services/order.service";
 export class ToEffectComponent implements OnInit {
   private userService = inject(UserService)
   private orderService = inject(OrderService)
+  private router = inject(Router)
 
   public products: IProduct[] = [];
   public shoppingCart = new ShoppingCart();
@@ -44,7 +46,14 @@ export class ToEffectComponent implements OnInit {
   }
 
   effectBuy() {
-    let order = this.createOrder();
+    this.orderService.effectBuy(this.createOrder()).subscribe(
+      data => {
+        sessionStorage.setItem('orderId', JSON.stringify(data))
+        this.products = []
+        this.shoppingCart.clear();
+        this.router.navigate(['/'])
+      },
+      err => { })
   }
 
   createOrder() {
